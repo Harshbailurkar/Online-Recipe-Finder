@@ -6,7 +6,30 @@ body {
   margin: 0;
   padding: 0;
 }
+nav {
+  text-align: center;
+  background-color: rgb(43, 43, 43);
+  padding: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+nav > ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  padding: 0.7em;
+  margin: 0 10px; /* Adjust the gap between list items */
+  background-color: rgb(236, 232, 232);
+  border-radius: 5px;
+}
 header {
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
