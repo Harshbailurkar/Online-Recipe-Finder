@@ -56,7 +56,7 @@ h1 {
   display: flex;
   justify-content: center;
 }
-input[type="text"] {
+input {
   background-color: #fff;
   border: 2px solid #ccc;
   border-radius: 8px;

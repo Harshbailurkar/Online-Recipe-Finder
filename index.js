@@ -2,18 +2,37 @@ const searchForm = document.querySelector("#submit");
 const searchInput = document.querySelector("#search");
 const resultList = document.querySelector("#results");
 
-searchForm.addEventListener("click", (e) => {
+searchInput.addEventListener("search", async (e) => {
+  await setTimeout(() => {
+    resultList.innerHTML = "Loading...";
+  }, 500);
   e.preventDefault();
-  searchRecipes();
+
+  await searchRecipes();
+});
+searchForm.addEventListener("click", async (e) => {
+  await setTimeout(() => {
+    resultList.innerHTML =
+      "<p style='text-align: center; font-weight: bold;'>Loading</p>";
+  }, 500);
+  e.preventDefault();
+
+  await searchRecipes();
 });
 
 async function searchRecipes() {
   const searchValue = searchInput.value.trim();
-  const response =
-    await fetch(`https://api.edamam.com/search?q=${searchValue}&app_id=a4b30d0a&app_key=
-72497efbe39eef20de55b10033cbdfd3&from=0&to=10`);
+  const response = await fetch(
+    `https://api.edamam.com/search?q=${searchValue}&app_id=a4b30d0a&app_key=72497efbe39eef20de55b10033cbdfd3&from=0&to=10`
+  );
   const data = await response.json();
-  displayRecipes(data.hits);
+
+  if (data.hits.length === 0) {
+    resultList.innerHTML =
+      "<p style='text-align: center; font-weight: bold;'>Recipe not found.</p>";
+  } else {
+    displayRecipes(data.hits);
+  }
 }
 
 function displayRecipes(recipes) {
