@@ -9,7 +9,6 @@ body {
 nav {
   text-align: center;
   background-color: rgb(43, 43, 43);
-  padding: 0.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,9 +23,11 @@ a {
   text-decoration: none;
   color: black;
 }
+nav > ul > li:nth-child(2) {
+  margin: 0 10px;
+}
 li {
   padding: 0.7em;
-  margin: 0 10px; /* Adjust the gap between list items */
   background-color: rgb(236, 232, 232);
   border-radius: 5px;
 }
@@ -48,7 +49,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   width: 20%;
-  margin-top: 2em;
+  margin-top: 1em;
   align-items: center;
 }
 .searchbar {
