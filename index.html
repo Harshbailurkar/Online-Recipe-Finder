@@ -8,13 +8,16 @@
   </head>
   <body>
     <div class="container">
-      <h1>Recipe finder</h1>
-      <form>
-        <input type="text" id="search" placeholder="Enter ingredients" />
-        <br>
-        Eg. Bread, Egg etc.
-        <button type="button" id="submit" class="btn">Search</button>
-      </form>
+      <div class="searchbar">
+        <div class="form">
+          <h1>Recipe finder</h1>
+          <input type="text" id="search" placeholder="Enter ingredients" />
+          <br />
+          <span id="eg"> Bread, Eggs etc...</span>
+          <br />
+          <button type="button" id="submit" class="btn">Search</button>
+        </div>
+      </div>
       <div id="results"></div>
     </div>
     <script src="index.js"></script>
