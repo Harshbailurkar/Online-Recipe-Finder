@@ -1,5 +1,5 @@
 # Online-Recipe-Finder
-#HTML #css #Javascript 
+#HTML #CSS #Javascript 
 
 Visit: https://harshbailurkar.github.io/Online-Recipe-Finder/
 
