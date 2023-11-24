@@ -1,8 +1,7 @@
 # Online-Recipe-Finder
 #HTML #CSS #Javascript 
 
-Visit: https://harshbailurkar.github.io/Online-Recipe-Finder/
-
+Visit: recipefinderfromingridients.netlify.app
 
 <table>
    <tr>
