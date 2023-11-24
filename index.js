@@ -23,7 +23,7 @@ searchForm.addEventListener("click", async (e) => {
 async function searchRecipes() {
   const searchValue = searchInput.value.trim();
   const response = await fetch(
-    `https://api.edamam.com/search?q=${searchValue}&app_id=a4b30d0a&app_key=72497efbe39eef20de55b10033cbdfd3&from=0&to=10`
+    `https://api.edamam.com/search?q=${searchValue}&app_id=YOUR_AIP_ID&app_key=Your_API_Key&from=0&to=10` // add your api key and id
   );
   const data = await response.json();
 
