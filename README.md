@@ -1,5 +1,5 @@
 # Online-Recipe-Finder
-#HTML #CSS #Javascript 
+#HTML #CSS #Javascript Edamam API
 
 Visit: [recipefinderfromingridients.netlify.app](https://recipefinderfromingridients.netlify.app/)
 
